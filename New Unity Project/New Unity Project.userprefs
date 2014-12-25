@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SurvivalAssets\Scripts\Shooting\RaycastShooting.js">
+    <Files>
+      <File FileName="Assets\SurvivalAssets\Scripts\Shooting\RaycastShooting.js" Line="31" Column="2" />
+      <File FileName="Assets\AI_Control_1.cs" Line="1" Column="1" />
+      <File FileName="Assets\SurvivalAssets\Scripts\WeaponSwitching.js" Line="23" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
