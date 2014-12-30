@@ -6371,6 +6371,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main: {fileID: 740324864}
   zoom: 20
+  reg: {fileID: 843974108}
+  zoomed: {fileID: 1485564142}
 --- !u!1 &741135840
 GameObject:
   m_ObjectHideFlags: 0

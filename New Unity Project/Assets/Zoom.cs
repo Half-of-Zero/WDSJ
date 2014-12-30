@@ -5,8 +5,8 @@ public class Zoom : MonoBehaviour
 {
 	public Camera main;
 	public int zoom;
-	GameObject reg;
-	GameObject zoomed;
+	public GameObject reg;
+	public GameObject zoomed;
 	// Use this for initialization
 	void Start () 
 	{
@@ -18,14 +18,14 @@ public class Zoom : MonoBehaviour
 	{
 		if (Input.GetMouseButtonDown (1)) 
 		{
-			//reg.SetActive=false;
-			//zoomed.SetActive=true;
+			reg.SetActive(false);
+			zoomed.SetActive(true);
 			main.fieldOfView = zoom;
 		} 
 		else if (Input.GetMouseButtonUp (1)) 
 		{
-			//reg.SetActive=true;
-			//zoomed.SetActive=false;
+			reg.SetActive(true);
+			zoomed.SetActive(false);
 			main.fieldOfView = 40;
 		}
 	}
