@@ -22,6 +22,12 @@ public class MouseLook : MonoBehaviour {
 	public float sensitivityX = 15F;
 	public float sensitivityY = 15F;
 
+	public float unzoomedX = 15F;
+	public float unzoomedY = 15F;
+
+	public float zoomedX = 7.5f;
+	public float zoomedY = 7.5f;
+
 	public float minimumX = -360F;
 	public float maximumX = 360F;
 
@@ -32,6 +38,17 @@ public class MouseLook : MonoBehaviour {
 
 	void Update ()
 	{
+		if (Input.GetMouseButtonDown (1)) 
+		{
+			sensitivityX=zoomedX;
+			sensitivityY=zoomedY;
+		} 
+		if (Input.GetMouseButtonUp (1)) 
+		{
+			sensitivityX=unzoomedX;
+			sensitivityY=unzoomedY;
+		}
+
 		if (axes == RotationAxes.MouseXAndY)
 		{
 			float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;

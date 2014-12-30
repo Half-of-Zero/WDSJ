@@ -6281,6 +6281,10 @@ MonoBehaviour:
   axes: 2
   sensitivityX: 10
   sensitivityY: 10
+  unzoomedX: 10
+  unzoomedY: 10
+  zoomedX: 2.5
+  zoomedY: 2.5
   minimumX: 0
   maximumX: 360
   minimumY: -60
@@ -7388,7 +7392,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 843974109}
   - 114: {fileID: 843974110}
-  - 114: {fileID: 843974111}
   - 82: {fileID: 843974112}
   m_Layer: 0
   m_Name: Ak-47
@@ -7435,19 +7438,6 @@ MonoBehaviour:
   ammoText: {fileID: 1269183475}
   MaxAmmo: 42
   ammo: 42
---- !u!114 &843974111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 843974108}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 921a6d23549a0964da42751a0a63132a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theBullet: {fileID: 1193373431}
-  Speed: 5
 --- !u!82 &843974112
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11706,6 +11696,30 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: sensitivityY
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: sensitivityX
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: unzoomedY
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: unzoomedX
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: zoomedX
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: zoomedY
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
   m_RootGameObject: {fileID: 1344157319}
@@ -13152,6 +13166,10 @@ MonoBehaviour:
   axes: 1
   sensitivityX: 15
   sensitivityY: 0
+  unzoomedX: 15
+  unzoomedY: 15
+  zoomedX: 7.5
+  zoomedY: 7.5
   minimumX: -360
   maximumX: 360
   minimumY: 0
