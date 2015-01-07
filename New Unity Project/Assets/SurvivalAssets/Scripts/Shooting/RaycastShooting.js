@@ -49,8 +49,8 @@ function fire()
 			var particleClone = Instantiate(Effect, hit.point, Quaternion.LookRotation(hit.normal));
 			Destroy(particleClone.gameObject, 2);
 			hit.transform.SendMessage("ApplyDammage", TheDammage, SendMessageOptions.DontRequireReceiver);
-			ammo--;
 		}
+		ammo--;
 	}		
 	yield WaitForSeconds(fireRate);
 	fireOn=1;
