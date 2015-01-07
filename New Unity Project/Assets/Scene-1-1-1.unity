@@ -7780,7 +7780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03898b1f21cd53848b48b8535b455688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Effect: {fileID: 0}
+  Effect: {fileID: 1416301780}
   MuzzleFlash: {fileID: 339012113}
   TheDammage: 20
   fireOn: 1
@@ -12156,11 +12156,11 @@ Prefab:
     - target: {fileID: 11400010, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: Effect
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1416301780}
     - target: {fileID: 11400016, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: Effect
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1416301780}
     - target: {fileID: 100000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -15755,7 +15755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03898b1f21cd53848b48b8535b455688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Effect: {fileID: 0}
+  Effect: {fileID: 1416301780}
   MuzzleFlash: {fileID: 768737294}
   TheDammage: 20
   fireOn: 1
@@ -16132,7 +16132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03898b1f21cd53848b48b8535b455688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Effect: {fileID: 0}
+  Effect: {fileID: 1416301780}
   MuzzleFlash: {fileID: 265904794}
   TheDammage: 100
   fireOn: 1
