@@ -1,10 +1,26 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Grounding.cs">
     <Files>
       <File FileName="Assets\Grounding.cs" Line="15" Column="22" />
       <File FileName="..\..\..\Shooter example\Assets\Scripts\Camera\CameraFollow.cs" Line="1" Column="1" />
       <File FileName="..\..\..\Shooter example\Assets\Scripts\Player\PlayerMovement.cs" Line="25" Column="20" />
+=======
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Zoom.cs">
+    <Files>
+      <File FileName="Assets\Zoom.cs" Line="34" Column="53" />
+      <File FileName="Assets\SurvivalAssets\Scripts\Shooting\RaycastShooting.js" Line="58" Column="2" />
+      <File FileName="Assets\hitscan.cs" Line="17" Column="1" />
+=======
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Shooter example\Assets\Scripts\Player\PlayerMovement.cs">
+    <Files>
+      <File FileName="..\..\..\Shooter example\Assets\Scripts\Player\PlayerMovement.cs" Line="1" Column="1" />
+>>>>>>> origin/master
+>>>>>>> origin/master
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
