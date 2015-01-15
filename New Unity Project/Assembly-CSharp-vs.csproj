@@ -49,6 +49,7 @@
      <Compile Include="Assets\AI_Control_1.cs" />
      <Compile Include="Assets\Grounding.cs" />
      <Compile Include="Assets\Kill_Plane.cs" />
+     <Compile Include="Assets\Pushing.cs" />
      <Compile Include="Assets\Stealh Scripts\AlarmSystems\DoneAlarmLight.cs" />
      <Compile Include="Assets\Stealh Scripts\AlarmSystems\DoneCCTVPlayerDetection.cs" />
      <Compile Include="Assets\Stealh Scripts\AlarmSystems\DoneLaserBlinking.cs" />
