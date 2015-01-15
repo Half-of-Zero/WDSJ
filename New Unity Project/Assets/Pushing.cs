@@ -10,15 +10,16 @@ public class Pushing : MonoBehaviour {
 	}
 
 	void OnControllerHit(ControllerColliderHit hit){
-		thisController.
-		Rigidbody body = hit.collider.attachedRigidbody;
+		//print ("called");
+		//Rigidbody body = hit.collider.attachedRigidbody;
 
-		if (body == null || body.isKinematic)
-			return;
-		if (hit.moveDirection.y < -0.3f)
-			return;
-		Vector3 pushDir = new Vector3 (hit.moveDirection.x, 0, hit.moveDirection.z);
-		body.velocity = pushDir * pushPower;
+		//if (body == null || body.isKinematic)
+		//	return;
+		//if (hit.moveDirection.y < -0.3f)
+		//	return;
+		//Vector3 pushDir = new Vector3 (hit.moveDirection.x, 0, hit.moveDirection.z);
+		//body.velocity = pushDir * pushPower;
+		Destroy (hit.gameObject);
 	}
 
 }
