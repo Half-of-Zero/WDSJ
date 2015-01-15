@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SurvivalAssets\Scripts\WeaponSwitching.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Grounding.cs">
     <Files>
-      <File FileName="Assets\SurvivalAssets\Scripts\WeaponSwitching.js" Line="23" Column="12" />
+      <File FileName="Assets\Grounding.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
