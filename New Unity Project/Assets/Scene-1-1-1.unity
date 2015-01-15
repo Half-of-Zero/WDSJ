@@ -10221,8 +10221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main: {fileID: 740324864}
   zoom: 20
-  reg: {fileID: 0}
-  zoomed: {fileID: 0}
+  reg: {fileID: 1022363634}
+  zoomed: {fileID: 1878202165}
 --- !u!1 &741135840
 GameObject:
   m_ObjectHideFlags: 0
@@ -14954,7 +14954,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1022363635
 Transform:
   m_ObjectHideFlags: 0
@@ -25840,11 +25840,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100430, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.x
@@ -25858,6 +25858,14 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 1.98000002
       objectReference: {fileID: 0}
+    - target: {fileID: 11400018, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: reg
+      value: 
+      objectReference: {fileID: 1022363634}
+    - target: {fileID: 11400018, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: zoomed
+      value: 
+      objectReference: {fileID: 1878202165}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
   m_RootGameObject: {fileID: 1344157319}
@@ -31818,7 +31826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1878202166
 Transform:
   m_ObjectHideFlags: 0
