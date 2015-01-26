@@ -15,7 +15,7 @@ public class Zoom : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate ()
+	void Update ()
 	{
 		if (Input.GetMouseButtonDown (0))
 		{
@@ -25,13 +25,13 @@ public class Zoom : MonoBehaviour
 		{
 			fire=false;
 		}
-		if (Input.GetMouseButtonDown (1)&&fire==false) 
+		if (Input.GetMouseButtonDown (1)) 
 		{
 			reg.SetActive(false);
 			zoomed.SetActive(true);
 			main.fieldOfView = zoom;
 		} 
-		else if (Input.GetMouseButtonUp (1)&&fire==false) 
+		else if (Input.GetMouseButtonUp (1)) 
 		{
 			reg.SetActive(true);
 			zoomed.SetActive(false);
