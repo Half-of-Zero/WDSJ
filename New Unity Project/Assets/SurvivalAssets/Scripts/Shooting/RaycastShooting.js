@@ -3,6 +3,7 @@
 var Effect : Transform;
 var MuzzleFlash : Light;
 var TheDammage = 100;
+var CrateDamage = 1;
 var fireOn=1;
 var fireRate=.1;
 var ammoText : GUIText;
@@ -48,7 +49,10 @@ function fire()
 		{
 			var particleClone = Instantiate(Effect, hit.point, Quaternion.LookRotation(hit.normal));
 			Destroy(particleClone.gameObject, 2);
-			hit.transform.SendMessage("ApplyDammage", TheDammage, SendMessageOptions.DontRequireReceiver);
+			if (hit.rigidbody.gameObject.tag == "Enemy")
+				hit.transform.SendMessage("ApplyDammage", TheDammage, SendMessageOptions.DontRequireReceiver);
+			else if (hit.rigidbody.gameObject.tag == "Breakable")
+				hit.transform.SendMessage("crateHit", CrateDamage, SendMessageOptions.DontRequireReceiver);
 		}
 		ammo--;
 	}		
