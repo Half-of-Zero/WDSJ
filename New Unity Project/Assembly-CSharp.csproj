@@ -48,9 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\AI_Control_1.cs" />
      <Compile Include="Assets\BoxPushing.cs" />
+     <Compile Include="Assets\CrateDrop.cs" />
      <Compile Include="Assets\Grounding.cs" />
      <Compile Include="Assets\Kill_Plane.cs" />
-     <Compile Include="Assets\Pushing.cs" />
      <Compile Include="Assets\Stealh Scripts\AlarmSystems\DoneAlarmLight.cs" />
      <Compile Include="Assets\Stealh Scripts\AlarmSystems\DoneCCTVPlayerDetection.cs" />
      <Compile Include="Assets\Stealh Scripts\AlarmSystems\DoneLaserBlinking.cs" />
@@ -76,7 +76,6 @@
      <Compile Include="Assets\Stealh Scripts\UnappliedScripts\DoneTags.cs" />
      <Compile Include="Assets\Stealh Scripts\UnappliedScripts\guiTextSet.cs" />
      <Compile Include="Assets\Zoom.cs" />
-     <Compile Include="Assets\hitscan.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
