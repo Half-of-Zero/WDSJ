@@ -4,23 +4,40 @@ using System.Collections;
 public class AI_Control_1 : MonoBehaviour 
 {
 	public GameObject player;
+	public GameObject me;
+	public float ViewDistance=16f ;
 	// Use this for initialization
 	private NavMeshAgent nav;
+	private Vector3 playerpos;
+	private Vector3 home;
 	
 	void Start()
 	{
+		home = me.transform.position;
+		playerpos = player.transform.position;
 		nav = GetComponent<NavMeshAgent>();
-		Vector3 playercords = player.transform.position;
-		nav.destination = playercords;
 	}
 	// Update is called once per frame
-	void Update () 
+
+	void FixedUpdate()
 	{
-		Start ();
-		print (nav.remainingDistance);
-		if (nav.remainingDistance > 16f)
+		playerpos = player.transform.position;
+	}
+
+	void OnTriggerStay(Collider other)
+	{
+		print ("something Entered");
+		if (other.gameObject == player)
 		{
-			nav.Stop();
+			print("player entered");
+			nav.destination= playerpos;
+		}
+	}
+	void OnTriggerExit(Collider other)
+	{
+		if (other.gameObject == player)
+		{
+			nav.destination=home;
 		}
 	}
 }
