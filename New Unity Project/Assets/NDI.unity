@@ -1273,6 +1273,10 @@ Prefab:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 228bec4d8558b4143a78db20592d475e, type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 228bec4d8558b4143a78db20592d475e, type: 2}
   m_RootGameObject: {fileID: 428801985}
@@ -1640,8 +1644,10 @@ MonoBehaviour:
   fireOn: 1
   fireRate: .100000001
   ammoText: {fileID: 1429160181}
-  MaxAmmo: 42
+  MagAmmo: 69
   ammo: 42
+  MaxMags: 6
+  Mags: 4
 --- !u!1 &322275530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,6 +1718,7 @@ GameObject:
   - 135: {fileID: 399810139}
   - 23: {fileID: 399810138}
   - 54: {fileID: 399810142}
+  - 114: {fileID: 399810143}
   m_Layer: 0
   m_Name: Ammo Pickup
   m_TagString: Pickup
@@ -1785,6 +1792,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &399810143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 399810137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb97a9100337e8c4e979ffea804b6e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2076689146}
+  thisType: 0
 --- !u!1 &428801985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1916,7 +1936,7 @@ Renderer:
   m_GameObject: {fileID: 428801985}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
@@ -3158,8 +3178,10 @@ MonoBehaviour:
   fireOn: 1
   fireRate: .100000001
   ammoText: {fileID: 1429160181}
-  MaxAmmo: 42
+  MagAmmo: 42
   ammo: 42
+  MaxMags: 6
+  Mags: 4
 --- !u!1 &1280948528
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,8 +4452,10 @@ MonoBehaviour:
   fireOn: 1
   fireRate: .100000001
   ammoText: {fileID: 1429160181}
-  MaxAmmo: 42
+  MagAmmo: 69
   ammo: 42
+  MaxMags: 6
+  Mags: 4
 --- !u!1 &1723656632
 GameObject:
   m_ObjectHideFlags: 0

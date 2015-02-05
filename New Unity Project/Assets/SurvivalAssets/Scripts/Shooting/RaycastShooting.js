@@ -7,7 +7,7 @@ var CrateDamage = 1;
 var fireOn=1;
 var fireRate=.1;
 var ammoText : GUIText;
-var MaxAmmo=69;
+var MagAmmo=69;
 var ammo=69;
 var MaxMags=6;
 var Mags = 4;
@@ -27,12 +27,15 @@ function Update ()
 			fire();	
 		}
 	}
-	 else if (Input.GetKeyDown(KeyCode.R))
+	 else if (Input.GetKeyDown(KeyCode.R))//RELOADS
 	 {
-		ammo=MaxMagAmmo;
+	 	if(Mags>0){
+			ammo=MagAmmo;
+			Mags--;
+		}
 		// add animation Declartion here
 	}
-	ammoText.text=ammo.ToString()+"/"+MaxAmmo.ToString();
+	ammoText.text=ammo.ToString()+"/"+Mags.ToString();
 }
 function flash() 
 {	
@@ -40,6 +43,12 @@ function flash()
 	yield WaitForSeconds(.1);
 	MuzzleFlash.enabled = false;
 }
+
+function ammoPickup(){
+	if(Mags!=MaxMags)
+	Mags++;
+}
+
 function fire()
 {
 	var hit : RaycastHit;

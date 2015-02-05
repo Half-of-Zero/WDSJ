@@ -14,10 +14,7 @@ public class CrateDrop : MonoBehaviour {
 	}
 
 	void breakCrate(){
-		int drops =Random.Range (0, 3);
-		for (int i=0; i<drops; i++) {
-			int dropType =0+ Random.Range(1,4);
-			Instantiate(powerup1);
-		}
+
+
 	}
 }
