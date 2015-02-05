@@ -10,15 +10,17 @@ public class AI_Control_1 : MonoBehaviour
 	void Start()
 	{
 		nav = GetComponent<NavMeshAgent>();
+		Vector3 playercords = player.transform.position;
+		nav.destination = playercords;
 	}
 	// Update is called once per frame
 	void Update () 
 	{
 		Start ();
-		if (nav.remainingDistance < 16)
+		print (nav.remainingDistance);
+		if (nav.remainingDistance > 16f)
 		{
-			Vector3 playercords = player.transform.position;
-			nav.destination = playercords;
+			nav.Stop();
 		}
 	}
 }
