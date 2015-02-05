@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AI_Control_1.cs" />
+     <Compile Include="Assets\AmmoPickup.cs" />
      <Compile Include="Assets\CrateDrop.cs" />
      <Compile Include="Assets\Grounding.cs" />
      <Compile Include="Assets\Kill_Plane.cs" />

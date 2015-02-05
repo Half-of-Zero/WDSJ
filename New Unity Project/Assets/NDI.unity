@@ -1713,7 +1713,7 @@ GameObject:
   - 23: {fileID: 399810138}
   - 54: {fileID: 399810142}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Ammo Pickup
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4288,6 +4288,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  powerup1: {fileID: 0}
+  powerup2: {fileID: 0}
+  powerup3: {fileID: 0}
 --- !u!1 &1689753306
 GameObject:
   m_ObjectHideFlags: 0

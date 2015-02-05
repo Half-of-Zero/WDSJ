@@ -7,8 +7,10 @@ var CrateDamage = 1;
 var fireOn=1;
 var fireRate=.1;
 var ammoText : GUIText;
-var MaxAmmo=42;
-var ammo=42;
+var MaxAmmo=69;
+var ammo=69;
+var MaxMags=6;
+var Mags = 4;
 
 function Start()
 {
@@ -27,7 +29,7 @@ function Update ()
 	}
 	 else if (Input.GetKeyDown(KeyCode.R))
 	 {
-		ammo=MaxAmmo;
+		ammo=MaxMagAmmo;
 		// add animation Declartion here
 	}
 	ammoText.text=ammo.ToString()+"/"+MaxAmmo.ToString();

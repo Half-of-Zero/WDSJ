@@ -1,11 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CrateDrop.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SurvivalAssets\Scripts\Shooting\RaycastShooting.js">
     <Files>
-      <File FileName="Assets\SurvivalAssets\Scripts\Shooting\RaycastShooting.js" Line="55" Column="96" />
-      <File FileName="Assets\SurvivalAssets\Scripts\EnemyHealth.js" Line="38" Column="7" />
-      <File FileName="Assets\CrateDrop.cs" Line="19" Column="16" />
+      <File FileName="Assets\Zoom.cs" Line="1" Column="1" />
+      <File FileName="Assets\AI_Control_1.cs" Line="1" Column="1" />
+      <File FileName="Assets\SurvivalAssets\Scripts\Shooting\RaycastShooting.js" Line="13" Column="14" />
+      <File FileName="Assets\SurvivalAssets\Scripts\EnemyHealth.js" Line="1" Column="1" />
+      <File FileName="Assets\CrateDrop.cs" Line="21" Column="4" />
       <File FileName="Assets\pushingJS.js" Line="1" Column="1" />
+      <File FileName="Assets\AmmoPickup.cs" Line="7" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
