@@ -1,4 +1,4 @@
- #pragma strict
+
 
 var Effect : Transform;
 var MuzzleFlash : Light;
@@ -6,7 +6,7 @@ var TheDammage = 100;
 var CrateDamage = 1;
 var fireOn=1;
 var fireRate=.1;
-var ammoText : GUIText;
+var ammoText : UI.Text;
 var MagAmmo=69;
 var ammo=69;
 var MaxMags=6;
@@ -14,6 +14,7 @@ var Mags = 4;
 
 function Start()
 {
+	ammoText=GetComponent(UI.Text);
 	MuzzleFlash.enabled=false;
 }
 
@@ -84,5 +85,4 @@ function fire()
 	}		
 	yield WaitForSeconds(fireRate);
 	fireOn=1;
-	audio.Play(0);
 }
