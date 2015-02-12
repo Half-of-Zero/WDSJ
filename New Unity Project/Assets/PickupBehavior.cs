@@ -7,8 +7,10 @@ public class PickupBehavior : MonoBehaviour {
 	public puType thisType;
 	void pickupActivate(){
 		if (thisType == puType.ammo) {
-
-
+			print ("pickup activated");
+			player.transform.SendMessage("ammoPickup", SendMessageOptions.DontRequireReceiver);
+			GameObject thisObject = this.gameObject;
+			Destroy(thisObject);
 		}
 	}
 }

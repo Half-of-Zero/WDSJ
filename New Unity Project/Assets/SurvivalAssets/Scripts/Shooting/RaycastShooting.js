@@ -37,6 +37,21 @@ function Update ()
 	}
 	ammoText.text=ammo.ToString()+"/"+Mags.ToString();
 }
+
+function setMags(toSet : int){
+Mags = toSet;
+print("setAmmo");
+}
+
+function getAmmo(target : GameObject){
+target.SendMessage("setAmmo",ammo, SendMessageOptions.DontRequireReceiver);
+}
+
+function setAmmo(otherAmmo : int){
+ammo = otherAmmo;
+print("setMags");
+}
+
 function flash() 
 {	
 	MuzzleFlash.enabled = true;

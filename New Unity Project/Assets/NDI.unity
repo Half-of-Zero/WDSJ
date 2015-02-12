@@ -1277,7 +1277,8 @@ Prefab:
       propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5400000, guid: 228bec4d8558b4143a78db20592d475e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 228bec4d8558b4143a78db20592d475e, type: 2}
   m_RootGameObject: {fileID: 428801985}
   m_IsPrefabParent: 0
@@ -1819,6 +1820,7 @@ GameObject:
   - 114: {fileID: 428801991}
   - 195: {fileID: 428801990}
   - 114: {fileID: 428801989}
+  - 135: {fileID: 428801998}
   - 114: {fileID: 428801988}
   - 114: {fileID: 428801987}
   - 114: {fileID: 428801986}
@@ -1828,7 +1830,7 @@ GameObject:
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &428801986
 MonoBehaviour:
@@ -1892,6 +1894,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  me: {fileID: 0}
+  ViewDistance: 16
 --- !u!195 &428801990
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1900,7 +1904,7 @@ NavMeshAgent:
   m_PrefabInternal: {fileID: 133083928}
   m_GameObject: {fileID: 428801985}
   m_Enabled: 0
-  m_Radius: 16
+  m_Radius: .5
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1997,6 +2001,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 1
+--- !u!135 &428801998
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 228bec4d8558b4143a78db20592d475e,
+    type: 2}
+  m_PrefabInternal: {fileID: 133083928}
+  m_GameObject: {fileID: 428801985}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 15
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &589727227
 GameObject:
   m_ObjectHideFlags: 0
@@ -4123,6 +4140,8 @@ MonoBehaviour:
   zoom: 20
   reg: {fileID: 1265425712}
   zoomed: {fileID: 292614604}
+  mags: 0
+  ammo: 0
 --- !u!45 &1592742150
 Skybox:
   m_ObjectHideFlags: 0

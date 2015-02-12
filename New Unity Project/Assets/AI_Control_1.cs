@@ -26,10 +26,10 @@ public class AI_Control_1 : MonoBehaviour
 
 	void OnTriggerStay(Collider other)
 	{
-		print ("something Entered");
+
 		if (other.gameObject == player)
 		{
-			print("player entered");
+
 			nav.destination= playerpos;
 		}
 	}
