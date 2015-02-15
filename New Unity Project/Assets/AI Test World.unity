@@ -121,6 +121,7 @@ MonoBehaviour:
   Effect: {fileID: 432245728}
   MuzzleFlash: {fileID: 614334739}
   TheDammage: 100
+  CrateDamage: 1
   fireOn: 1
   fireRate: .100000001
   ammoText: {fileID: 0}
@@ -2180,6 +2181,7 @@ MonoBehaviour:
   Effect: {fileID: 432245728}
   MuzzleFlash: {fileID: 149878144}
   TheDammage: 20
+  CrateDamage: 1
   fireOn: 1
   fireRate: .100000001
   ammoText: {fileID: 0}
@@ -3528,6 +3530,7 @@ MonoBehaviour:
   Effect: {fileID: 432245728}
   MuzzleFlash: {fileID: 220624470}
   TheDammage: 20
+  CrateDamage: 1
   fireOn: 1
   fireRate: .100000001
   ammoText: {fileID: 0}
@@ -3570,7 +3573,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 0157aa660db25d34da0651093661dac0, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 0157aa660db25d34da0651093661dac0, type: 3}
       propertyPath: m_LocalScale.z
