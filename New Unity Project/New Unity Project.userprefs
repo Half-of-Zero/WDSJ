@@ -1,8 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AI_Control_1.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SurvivalAssets\Scripts\Shooting\RaycastShooting.js">
     <Files>
-      <File FileName="Assets\AI_Control_1.cs" Line="28" Column="1" />
+      <File FileName="Assets\PickupBehavior.cs" Line="13" Column="22" />
+      <File FileName="Assets\SurvivalAssets\Scripts\Shooting\RaycastShooting.js" Line="43" Column="17" />
+      <File FileName="Assets\Zoom.cs" Line="18" Column="27" />
+      <File FileName="Assets\SurvivalAssets\Scripts\WeaponSwitching.js" Line="1" Column="1" />
+      <File FileName="Assets\pushingJS.js" Line="10" Column="28" />
+      <File FileName="Assets\SurvivalAssets\Scripts\EnemyHealth.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

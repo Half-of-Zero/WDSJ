@@ -1,4 +1,4 @@
- #pragma strict
+
 
 var Effect : Transform;
 var MuzzleFlash : Light;
@@ -6,12 +6,15 @@ var TheDammage = 100;
 var CrateDamage = 1;
 var fireOn=1;
 var fireRate=.1;
-var ammoText : GUIText;
-var MaxAmmo=42;
-var ammo=42;
+var ammoText : UI.Text;
+var MagAmmo=69;
+var ammo=69;
+var MaxMags=6;
+var Mags = 4;
 
 function Start()
 {
+	ammoText=GetComponent(UI.Text);
 	MuzzleFlash.enabled=false;
 }
 
@@ -25,19 +28,43 @@ function Update ()
 			fire();	
 		}
 	}
-	 else if (Input.GetKeyDown(KeyCode.R))
+	 else if (Input.GetKeyDown(KeyCode.R))//RELOADS
 	 {
-		ammo=MaxAmmo;
+	 	if(Mags>0){
+			ammo=MagAmmo;
+			Mags--;
+		}
 		// add animation Declartion here
 	}
-	ammoText.text=ammo.ToString()+"/"+MaxAmmo.ToString();
+	ammoText.text=ammo.ToString()+"/"+Mags.ToString();
 }
+
+function setMags(toSet : int){
+Mags = toSet;
+print("setAmmo");
+}
+
+function getAmmo(target : GameObject){
+target.SendMessage("setAmmo",ammo, SendMessageOptions.DontRequireReceiver);
+}
+
+function setAmmo(otherAmmo : int){
+ammo = otherAmmo;
+print("setMags");
+}
+
 function flash() 
 {	
 	MuzzleFlash.enabled = true;
 	yield WaitForSeconds(.1);
 	MuzzleFlash.enabled = false;
 }
+
+function ammoPickup(){
+	if(Mags!=MaxMags)
+	Mags++;
+}
+
 function fire()
 {
 	var hit : RaycastHit;
@@ -58,5 +85,4 @@ function fire()
 	}		
 	yield WaitForSeconds(fireRate);
 	fireOn=1;
-	audio.Play(0);
 }

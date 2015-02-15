@@ -7,6 +7,11 @@ var pushPower = 2.0;
 		if (body == null || body.isKinematic)
 			return;
 			
+		if(body.tag == "Pickup"){
+			body.transform.SendMessage("pickupActivate", SendMessageOptions.DontRequireReceiver);
+			return;
+		}
+			
 		// We dont want to push objects below us
 		if (hit.moveDirection.y < -0.3) 
 			return;
