@@ -14,7 +14,6 @@ var Mags = 4;
 
 function Start()
 {
-	ammoText=GetComponent(UI.Text);
 	MuzzleFlash.enabled=false;
 }
 
@@ -38,6 +37,19 @@ function Update ()
 	}
 	ammoText.text=ammo.ToString()+"/"+Mags.ToString();
 }
+
+function setMags(toSet : float){
+Mags = toSet;
+}
+
+function getAmmo(target : GameObject){
+target.SendMessage("setAmmo",ammo, SendMessageOptions.DontRequireReceiver);
+}
+
+function setAmmo(otherAmmo : float){
+ammo = otherAmmo;
+}
+
 function flash() 
 {	
 	MuzzleFlash.enabled = true;
@@ -46,8 +58,11 @@ function flash()
 }
 
 function ammoPickup(){
+	print("PICKUP ACTIVATED");
+	print("current mags: "+Mags);
 	if(Mags!=MaxMags)
 	Mags++;
+	print("New mags: "+Mags);
 }
 
 function fire()
