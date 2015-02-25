@@ -9,7 +9,7 @@ public class DoneEnemySight : MonoBehaviour
 	
 	
 	private NavMeshAgent nav;							// Reference to the NavMeshAgent component.
-	private SphereCollider col;							// Reference to the sphere collider trigger component.
+								// Reference to the sphere collider trigger component.
 	private Animator anim;								// Reference to the Animator.
 	private DoneLastPlayerSighting lastPlayerSighting;	// Reference to last global sighting of the player.
     private GameObject player;							// Reference to the player.
