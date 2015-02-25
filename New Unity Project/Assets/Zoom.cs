@@ -8,8 +8,8 @@ public class Zoom : MonoBehaviour
 	public GameObject reg;
 	public GameObject zoomed;
 	private bool fire=false;
-	public int mags = 0;
-	public int ammo =0;
+	public float mags = 0;
+	public float ammo =7;
 	// Use this for initialization
 	void Start () 
 	{
@@ -17,6 +17,8 @@ public class Zoom : MonoBehaviour
 	}
 	void setAmmo(int toAmmo){
 		ammo = toAmmo;
+		print (toAmmo);
+		print (ammo);
 	}
 	// Update is called once per frame
 	void Update ()
@@ -31,16 +33,19 @@ public class Zoom : MonoBehaviour
 		}
 		if (Input.GetMouseButtonDown (1)) 
 		{
+			reg.SendMessage("getAmmo", this.gameObject, SendMessageOptions.DontRequireReceiver);
 			reg.SetActive(false);
 			zoomed.SetActive(true);
-			reg.SendMessage("getAmmo", this.gameObject, SendMessageOptions.DontRequireReceiver);
 			zoomed.SendMessage("setMags", mags, SendMessageOptions.DontRequireReceiver);
 			zoomed.SendMessage("setAmmo", ammo, SendMessageOptions.DontRequireReceiver);
 			main.fieldOfView = zoom;
 		} 
 		else if (Input.GetMouseButtonUp (1)) 
 		{
+			zoomed.SendMessage("getAmmo", this.gameObject, SendMessageOptions.DontRequireReceiver);
 			reg.SetActive(true);
+			reg.SendMessage("setMags", mags, SendMessageOptions.DontRequireReceiver);
+			reg.SendMessage("setAmmo", ammo, SendMessageOptions.DontRequireReceiver);
 			zoomed.SetActive(false);
 			main.fieldOfView = 40;
 		}
