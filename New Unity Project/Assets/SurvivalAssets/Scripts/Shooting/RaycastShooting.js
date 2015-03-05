@@ -35,7 +35,7 @@ function Update ()
 		}
 		// add animation Declartion here
 	}
-	ammoText.text=ammo.ToString()+"/"+Mags.ToString();
+	//ammoText.text=ammo.ToString()+"/"+Mags.ToString();
 }
 
 function setMags(toSet : float){
@@ -58,11 +58,8 @@ function flash()
 }
 
 function ammoPickup(){
-	print("PICKUP ACTIVATED");
-	print("current mags: "+Mags);
 	if(Mags!=MaxMags)
 	Mags++;
-	print("New mags: "+Mags);
 }
 
 function fire()

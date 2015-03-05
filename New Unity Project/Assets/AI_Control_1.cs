@@ -51,7 +51,7 @@ public class AI_Control_1 : MonoBehaviour
 					if(hit.collider.gameObject == player)
 					{
 						// ... the player is in sight.
-						playerInSight = true;
+						//playerInSight = true;
 					}
 				}
 			}
