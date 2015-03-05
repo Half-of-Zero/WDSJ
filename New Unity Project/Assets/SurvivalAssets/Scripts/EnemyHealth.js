@@ -2,6 +2,7 @@
 
 var Health = 100;
 var maxHealth =Health;
+var drop : GameObject;
 
 function ApplyDammage (TheDammage : int)
 {
@@ -35,5 +36,7 @@ function ApplyDammage (TheDammage : int)
 
 function Dead()
 {
+	
+	Instantiate(drop, this.gameObject.transform.position, this.transform.rotation);
 	Destroy (gameObject);
 }

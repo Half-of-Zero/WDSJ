@@ -8,7 +8,7 @@ var pushPower = 2.0;
 			return;
 			
 		if(body.tag == "Pickup"){
-			body.transform.SendMessage("pickupActivate", SendMessageOptions.DontRequireReceiver);
+			body.transform.SendMessage("pickupActivate",this.gameObject, SendMessageOptions.DontRequireReceiver);
 			return;
 		}
 			

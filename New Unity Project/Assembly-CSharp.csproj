@@ -59,11 +59,6 @@
      <Compile Include="Assets\Stealh Scripts\AlarmSystems\DoneLaserBlinking.cs" />
      <Compile Include="Assets\Stealh Scripts\AlarmSystems\DoneLaserPlayerDetection.cs" />
      <Compile Include="Assets\Stealh Scripts\AlarmSystems\DoneLaserSwitchDeactivation.cs" />
-     <Compile Include="Assets\Stealh Scripts\EnemyScripts\DoneEnemyAI.cs" />
-     <Compile Include="Assets\Stealh Scripts\EnemyScripts\DoneEnemyAnimation.cs" />
-     <Compile Include="Assets\Stealh Scripts\EnemyScripts\DoneEnemyShooting.cs" />
-     <Compile Include="Assets\Stealh Scripts\EnemyScripts\DoneEnemySight.cs" />
-     <Compile Include="Assets\Stealh Scripts\EnemyScripts\DoneWayPointGizmo.cs" />
      <Compile Include="Assets\Stealh Scripts\GameControllerScripts\DoneHashIDs.cs" />
      <Compile Include="Assets\Stealh Scripts\GameControllerScripts\DoneLastPlayerSighting.cs" />
      <Compile Include="Assets\Stealh Scripts\LevelDynamics\DoneCameraMovement.cs" />

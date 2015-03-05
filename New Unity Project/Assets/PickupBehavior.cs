@@ -2,12 +2,10 @@
 using System.Collections;
 
 public class PickupBehavior : MonoBehaviour {
-	public GameObject player;
 	public enum puType{ammo, health, money};
 	public puType thisType;
-	void pickupActivate(){
+	void pickupActivate(GameObject player){
 		if (thisType == puType.ammo) {
-			print ("pickup activated");
 			player.SendMessage("ammoPickup", SendMessageOptions.DontRequireReceiver);
 			GameObject thisObject = this.gameObject;
 			Destroy(thisObject);
