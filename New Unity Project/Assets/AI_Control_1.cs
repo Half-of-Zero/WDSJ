@@ -11,6 +11,7 @@ public class AI_Control_1 : MonoBehaviour
 	private Vector3 playerpos;
 	private Vector3 home;
 	private bool chase;
+	private bool playerInSight;
 	private SphereCollider col;
 	
 	void Start()
