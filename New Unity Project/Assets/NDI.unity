@@ -1281,6 +1281,10 @@ Prefab:
       propertyPath: drop
       value: 
       objectReference: {fileID: 100000, guid: d1ab4fc91feb62745b9bcce848be03fd, type: 2}
+    - target: {fileID: 11400002, guid: 228bec4d8558b4143a78db20592d475e, type: 2}
+      propertyPath: dropHeight.y
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5400000, guid: 228bec4d8558b4143a78db20592d475e, type: 2}
     - {fileID: 11400004, guid: 228bec4d8558b4143a78db20592d475e, type: 2}
@@ -1788,6 +1792,7 @@ MonoBehaviour:
   Health: 100
   maxHealth: 100
   drop: {fileID: 100000, guid: d1ab4fc91feb62745b9bcce848be03fd, type: 2}
+  dropHeight: {x: 0, y: -2, z: 0}
 --- !u!23 &428801992
 Renderer:
   m_ObjectHideFlags: 0
@@ -4234,7 +4239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  powerup1: {fileID: 0}
+  powerup1: {fileID: 100000, guid: d1ab4fc91feb62745b9bcce848be03fd, type: 2}
   powerup2: {fileID: 0}
   powerup3: {fileID: 0}
 --- !u!1 &1689753306

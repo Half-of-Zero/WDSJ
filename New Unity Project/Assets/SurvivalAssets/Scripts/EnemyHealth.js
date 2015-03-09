@@ -3,6 +3,7 @@
 var Health = 100;
 var maxHealth =Health;
 var drop : GameObject;
+var dropHeight = Vector3(0f, .25f, 0f); // Subtracted from end position. Max y value = .75
 
 function ApplyDammage (TheDammage : int)
 {
@@ -37,6 +38,6 @@ function ApplyDammage (TheDammage : int)
 function Dead()
 {
 	
-	Instantiate(drop, this.gameObject.transform.position, this.transform.rotation);
+	Instantiate(drop, this.gameObject.transform.position-dropHeight, this.transform.rotation);
 	Destroy (gameObject);
 }

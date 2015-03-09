@@ -17,8 +17,6 @@ public class Zoom : MonoBehaviour
 	}
 	void setAmmo(int toAmmo){
 		ammo = toAmmo;
-		print (toAmmo);
-		print (ammo);
 	}
 	// Update is called once per frame
 	void Update ()

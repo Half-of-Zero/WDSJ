@@ -14,7 +14,8 @@ public class CrateDrop : MonoBehaviour {
 	}
 
 	void breakCrate(){
-
-
+		Vector3 d1Loc = new Vector3 (Random.Range (-.5F, .5F), 0F, Random.Range (-.5F, .5F));
+		Instantiate (powerup1,this.gameObject.transform.position-d1Loc, this.transform.rotation);
+		Destroy (this.gameObject);
 	}
 }
